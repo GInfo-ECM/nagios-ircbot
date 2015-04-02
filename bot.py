@@ -112,7 +112,7 @@ if __name__ == '__main__':
     f = LogBotFactory(MyChannel) 
 
     # connect factory to this host and port
-    reactor.connectTCP(MyIRCServer, MyiIRCPort, f)
+    reactor.connectTCP(MyIRCServer, MyIRCPort, f)
 
     # run bot
     reactor.run()
