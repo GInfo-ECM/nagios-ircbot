@@ -3,7 +3,7 @@
 You need python and twisted.
 Optional 'daemon'.
 
-* Download irc.py and save it where ever you chose.
+* Download bot.py and save it where ever you chose.
 * Make a fifo with "mkfifo ircpipe"
 * Change MyChannel, MyIRCServer and MyPipe variables in bot.py
 * In /etc/nagios/misccommands.cfg add :
@@ -27,10 +27,10 @@ define command{
 
 * You can now do "python bot.py" to start/test the bot
 
-# To make irc.py act as a service under debian/ubuntu :
+# To make bot.py act as a service under debian/ubuntu :
 
 * apt-get install daemon
-* edit /etc/daemon.conf, add the line "ircbot    command=/usr/bin/python /root/irc.py" with the correct path
+* edit /etc/daemon.conf, add the line "ircbot    command=/usr/bin/python /root/bot.py" with the correct path
 
 And voila !
 
